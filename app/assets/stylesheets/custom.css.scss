@@ -40,3 +40,18 @@ $navbar-default-bg: #000000;
   //background-color: #040282;
   letter-spacing: 1px;
 }
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #000000;
+}
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right; 
+  list-style: none;
+}
