@@ -27,6 +27,7 @@ $navbar-default-bg: #000000;
   background-size: cover;
   height: 550px;
 }
+
 .jumbotron h1 {
   color: #000000;
   text-align: center;
@@ -34,10 +35,35 @@ $navbar-default-bg: #000000;
   letter-spacing: -1px;
   font-weight: bold;
 }
+
 .xlarge-btn {
   font-size: 2 em;
   color: #000000;
   letter-spacing: 1px;
+}
+
+.title {
+  text-align: center;
+}
+
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+}
+
+.description {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.article-title{
+  font-weight: bold;
+  font-size: 1.5 em;
+}
+.article-description {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 footer {
@@ -53,15 +79,4 @@ footer small {
 footer ul {
   float: right; 
   list-style: none;
-}
-.title {
-  text-align: center;
-}
-.article-actions {
-  border-top: 1px solid #eaeaea;
-  padding-top: 15px;
-}
-.description {
-  text-align: center;
-  margin-top: 0px;
 }
