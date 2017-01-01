@@ -29,11 +29,11 @@ def update
 end
 
 def show
-  @user_articles = @user.articles.paginate(page: params[:page], per_page: 1) 
+  @user_articles = @user.articles.paginate(page: params[:page], per_page: 5) 
 end
 
 def index
-  @all_users = User.paginate(page: params[:page], per_page: 1) 
+  @all_users = User.paginate(page: params[:page], per_page: 5) 
 end
 
 def destroy
