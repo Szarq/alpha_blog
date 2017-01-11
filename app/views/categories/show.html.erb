@@ -1,0 +1,9 @@
+<h1 class="title"><%= "Category: " + @category.name %> </h1>
+
+<div class="center">
+  <%= will_paginate @category_articles %>    
+</div>  
+<%= render 'articles/article', obj: @category.articles %> 
+<div class="center">    
+  <%= will_paginate @category_articles %>    
+</div>

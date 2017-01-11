@@ -16,7 +16,7 @@ before_action :require_admin, only: [:destroy]
       flash[:success] = "Welcome to the Alpha Blog #{@user.username}."  
       redirect_to user_path(@user)
     else
-      render 'new'
+      render :new
     end
   end
   

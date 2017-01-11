@@ -19,6 +19,13 @@
   <h4 class="description"><strong>Description:</strong></h4>
   <hr>
   <%= simple_format(@article.description) %>  
+  <% if @article.categories.any? %>
+    <div class="row">Categories:
+      <% @article.categories.each do |category| %>
+        <%= link_to category.name, category_path(category), class: "badge" %>
+      <% end %>
+    </div>  
+  <% end %>
   <div class="article-actions">
     <% if logged_in? && (@article.user == current_user || current_user.admin?) %>
       <%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-xs btn-primary" %>
