@@ -1,5 +1,13 @@
 <h1 class="title"><%= "Category: " + @category.name %> </h1>
 
+<div class="center"> 
+  <% if logged_in? and current_user.admin? %>
+    <%= link_to "Edit category", edit_category_path(@category), class: "btn btn-xs btn-primary" %>
+    <%= link_to "Delete category", category_path(@category), method: :delete, data: {confirm: "Are you sure? "}, 
+                                                                    class: "btn btn-xs btn-danger" %>
+  <% end %>
+</div>
+
 <div class="center">
   <%= will_paginate @category_articles %>    
 </div>  

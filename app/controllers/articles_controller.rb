@@ -15,7 +15,6 @@ class ArticlesController < ApplicationController
   def edit
   end  
   
-      
   def create
     @article = Article.new(article_params)
     @article.user = current_user
@@ -41,7 +40,7 @@ class ArticlesController < ApplicationController
   
   def destroy
     @article.destroy
-    flash[:danger] = "Article was successfully deleted"
+    flash[:danger] = "Article was successfully deleted."
     redirect_to articles_path
   end  
   
